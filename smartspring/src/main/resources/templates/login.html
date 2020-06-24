@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Smartspring</title>
+</head>
+<body>
+	<form th:action="@{/login/action}">
+		<h1>Login User</h1>
+		<table>
+			<tr> <!-- baris 1 -->
+				<td>Username</td> <!-- kolom -->
+				<td><input type="text" name="username" id="userId"></td>
+			</tr>
+			<tr> <!-- baris 2 -->
+				<td>Password</td>
+				<td><input type="text" name="password" id="passId"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit" value="submit">Save</button>&nbsp;&nbsp;<input type="reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

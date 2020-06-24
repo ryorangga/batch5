@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu 1</title>
+</head>
+<body>
+	<form th:action="@{/pasien/create}">
+		<table>
+			<tr>
+				<td>Nomor Pasien</td>
+				<td><input type="text" name="nomor"></td>
+			</tr>
+			<tr>
+				<td>Nama Pasien</td>
+				<td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Gender Pasien</td>
+				<td><input type="radio" name="gender" value="pria">Pria &nbsp;&nbsp;<input type="radio" name="namaGender" value="wanita">Wanita</td>
+			</tr>
+			<tr>
+				<td>Kategori Pasien</td>
+				<td><select name="kategori">
+						<option>BPJS</option>
+						<option>Asuransi</option>
+						<option>Pribadi</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Biaya Pasien</td>
+				<td><input type="text" name="biaya" id="biayaId"></td>
+			</tr>
+			<tr>
+				<td>Tanggal Lahir</td>
+				<td><input type="date" name="tanggalLahir"></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit">&nbsp;&nbsp;<input type="reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
